@@ -15,7 +15,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
-app.UseMiddleware<RequestLoggingMiddleware>();
+app.UseMiddleware<HttpRequestLogger>();
 
 app.UseRouting();
 
